@@ -4,9 +4,9 @@ NPM node based CLI package to provide a fast, complete and reliable way to publi
 
 # Install
 Easy as pie, run: `npm install @manelcecs/node-server-spa`
-ps: yes, a bit long... sorry
+ps: yes, a bit long... sorry.
 
- # Usage
+# Usage
  Did i say this is fast and easy? No? O.K.
  This package is fast and easy to use. Just run on your root folder: `nsspa`
  TIP: NodeServerSinglePageApplication, just to keep it in mind.
