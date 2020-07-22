@@ -1,17 +1,24 @@
 {
-  "name": "@node-server-spa/node-server-spa",
+  "name": "@manelcecs/node-server-spa",
   "version": "0.1.0",
   "description": "NPM node based package to provide a fast, complete and reliable way to publish, deploy or test SPA (such as Angular, React..) via Node + Express server.",
   "main": "index.js",
+  "engines": {
+    "node": "^12.13.0"
+  },
   "scripts": {
     "create-server-file": "node index.js"
   },
-  "bin":{
+  "bin": {
     "nsspa": "./index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/manelcecs/node-server-spa.git"
+  },
+  "directories": {
+    "lib": "./lib",
+    "assets": "./assets"
   },
   "keywords": [
     "node",
@@ -23,7 +30,7 @@
     "vue",
     "javascript"
   ],
-  "author": "@manelcecs",
+  "author": "manelcecs",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/manelcecs/node-server-spa/issues"
