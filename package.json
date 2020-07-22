@@ -6,6 +6,9 @@
   "scripts": {
     "create-server-file": "node index.js"
   },
+  "bin":{
+    "nsspa": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/manelcecs/node-server-spa.git"
