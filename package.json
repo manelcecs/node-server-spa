@@ -18,7 +18,8 @@
   },
   "directories": {
     "lib": "./lib",
-    "assets": "./assets"
+    "assets": "./assets",
+    "readmeFiles": "./readmeFiles"
   },
   "keywords": [
     "node",
