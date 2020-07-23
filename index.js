@@ -107,7 +107,7 @@ async function getServerName() {
     let name = await inquirer.askServerFilename();
 
     if(name) {
-        name = inquirer.validateExtension(name.name, 'js');
+        name = inquirer.validateExtension(name.name, 'js', 'server.js');
     }
     return name;
 
@@ -118,8 +118,11 @@ async function getServerConfigData() {
     var data = await inquirer.askServerConfigData();
 
     if(data){
-        data.access = inquirer.validateExtension(data.access, 'html');
+        data.access = inquirer.validateExtension(data.access, 'html', 'index.js');
+        data.localPort = (data.localPort == '')? '3030' : data.localPort;
+        data.distDir = (data.distDir == '')? '<rootFolder>/dist/<appName>' : data.distDir;
     }
+
 
     return data;
 
