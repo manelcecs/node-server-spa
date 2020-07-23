@@ -22,10 +22,13 @@ Try not to set directory or weird strings, it will crash or worse, it's going to
 Time to configure your server.
 
  1. PORT: the local port where the server will listen.
+
     ![Port](./readmeFiles/port.PNG)
  2. Distribution folder: the compiled static folder where your application will be serverd.
+
     ![Dist Dir](./readmeFiles/dirName.PNG)
  3. Access Point: this is the html file where all javascript static files are indexed, by default is `index.html` but if you've changed it, let the cli know.
+ 
     ![Access](./readmeFiles/access.PNG)
 
 # The End
