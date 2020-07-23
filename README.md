@@ -33,4 +33,3 @@ But then:
  - Automated install
  - Package.json script modify to set the servers as main
  - ...
-
