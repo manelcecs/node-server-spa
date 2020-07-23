@@ -15,18 +15,23 @@ ps: yes, a bit long... sorry.
  ![Wellcome and Greetings](./readmeFiles/Wellcome.PNG)
 ## Step 1
 The CLI will ask the name of your server file. Just press enter to let default `server.js` or type the name you want.
-![alt text](Isolated.png "Title")
+![Server Name](./readmeFiles/serverName.PNG)
 Try not to set directory or weird strings, it will crash or worse, it's going to append `.js` at the end.
 
 ## Step 2
 Time to configure your server.
 
  1. PORT: the local port where the server will listen.
+    ![Port](./readmeFiles/port.PNG)
  2. Distribution folder: the compiled static folder where your application will be serverd.
+    ![Dist Dir](./readmeFiles/dirName.PNG)
  3. Access Point: this is the html file where all javascript static files are indexed, by default is `index.html` but if you've changed it, let the cli know.
+    ![Access](./readmeFiles/access.PNG)
 
 # The End
 That's all. Well, not all.
+
+![GoodBye](./readmeFiles/GoodBye.PNG)
 
 For now on, you should run `npm install express`. That's because I cannot modify `package.json` dependencies easily. BUT I'm going to do it. Keep an eye on it!
 
