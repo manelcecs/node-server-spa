@@ -1,6 +1,6 @@
 {
   "name": "@manelcecs/node-server-spa",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "NPM node based package to provide a fast, complete and reliable way to publish, deploy or test SPA (such as Angular, React..) via Node + Express server.",
   "main": "index.js",
   "engines": {
