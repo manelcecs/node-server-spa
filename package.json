@@ -41,6 +41,7 @@
   "homepage": "https://github.com/manelcecs/node-server-spa#readme",
   "dependencies": {
     "buffer-replace": "^1.0.0",
+    "chai": "^4.2.0",
     "chalk": "^4.1.0",
     "clear": "^0.1.0",
     "configstore": "^5.0.1",
@@ -49,7 +50,8 @@
     "inquirer": "^7.3.2",
     "minimist": "^1.2.5",
     "mocha": "^8.0.1",
-    "nyc": "^15.1.0"
+    "nyc": "^15.1.0",
+    "sinon": "^9.0.2"
   },
   "devDependencies": {}
 }
