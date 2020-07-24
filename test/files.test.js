@@ -4,11 +4,10 @@
  * @create date 2020-07-24 19:05
  */
 
-var assert = require('assert');
 var myFiles = require('../lib/files');
 var sinon = require('sinon');
 var fs = require('fs');
-var expect = require('chai').expect;
+var process = require('child_process');
 
 describe('Testing write server file', () => {
 
@@ -19,7 +18,8 @@ describe('Testing write server file', () => {
         access: 'index.html'
     };
 
-    let readFileSync = sinon.stub(fs, 'writeFileSync').returns({});
+    sinon.stub(fs, 'writeFileSync').returns({});
+    sinon.stub(process, 'execSync').returns({});
 
     it('Server file writed', () => {
         myFiles.writeServerFile(serverName, serverData);
