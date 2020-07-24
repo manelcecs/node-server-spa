@@ -16,6 +16,7 @@ ps: yes, a bit long... sorry.
 ## Step 1
 The CLI will ask the name of your server file. Just press enter to let default `server.js` or type the name you want.
 ![Server Name](./readmeFiles/serverName.PNG)
+
 Try not to set directory or weird strings, it will crash or worse, it's going to append `.js` at the end.
 
 ## Step 2
