@@ -23,27 +23,23 @@ Time to configure your server.
 
  1. PORT: the local port where the server will listen.
 
-    ![Port](./readmeFiles/port.PNG)
+    ![Port prompt](./readmeFiles/port.PNG)
  2. Distribution folder: the compiled static folder where your application will be serverd.
 
-    ![Dist Dir](./readmeFiles/dirName.PNG)
+    ![Dist Dir prompt](./readmeFiles/dirName.PNG)
  3. Access Point: this is the html file where all javascript static files are indexed, by default is `index.html` but if you've changed it, let the cli know.
  
-    ![Access](./readmeFiles/access.PNG)
+    ![Access point prompt](./readmeFiles/access.PNG)
 
 # The End
-That's all. Well, not all.
+That's all.
 
 ![GoodBye](./readmeFiles/GoodBye.PNG)
-
-For now on, you should run `npm install express`. That's because I cannot modify `package.json` dependencies easily. BUT I'm going to do it. Keep an eye on it!
 
 ### Comming soon
 The next steps, is test. Test it a lot.
 
 But then:
 
- - Package.json dependency with express
- - Automated install
  - Package.json script modify to set the servers as main
  - ...
