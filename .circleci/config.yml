@@ -11,17 +11,12 @@ jobs:
           steps:
             - run: npm install
             - run: npm test
-  npm-deploy:
-    executor:
-      name: node/default
-    steps:
-      - checkout
-      - run:
-        name: Authenticate with npm registry
-        command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
-      - run:
-        name: Publish package
-        command: npm publish
+            - run:
+                name: Authenticate with npm registry
+                command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+            - run:
+                name: Publish package
+                command: npm publish
 
 workflows:
     build-and-test:
