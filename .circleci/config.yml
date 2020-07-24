@@ -12,9 +12,6 @@ jobs:
             - run: npm install
             - run: npm test
   npm-deploy:
-    filters:
-      branches:
-        only: master
     executor:
       name: node/default
     steps:
