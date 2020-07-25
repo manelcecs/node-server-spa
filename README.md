@@ -2,7 +2,18 @@
 
 NPM node based CLI package to provide a fast, complete and reliable way to publish, deploy or test SPA (such as Angular, React..) via Node + Express server.
 
+## What NSSPA do?
+
+NSSPA creates an express server file to serve SPA in development and production enviroments. Simple.
+
 # Install
+
+## Requirements
+
+ - A pc with any O.S. capable of run node.
+ - Internet access. You don't need 1Gb, but it's cool.
+ - Node.js 12+ minimun.
+
 Easy as pie, run: `npm install @manelcecs/node-server-spa`
 ps: yes, a bit long... sorry.
 
@@ -13,13 +24,16 @@ ps: yes, a bit long... sorry.
  
  TIP: NodeServerSinglePageApplication, just to keep it in mind.
  ![Wellcome and Greetings](./readmeFiles/Wellcome.PNG)
+ 
 ## Step 1
+
 The CLI will ask the name of your server file. Just press enter to let default `server.js` or type the name you want.
 ![Server Name](./readmeFiles/serverName.PNG)
 
 Try not to set directory or weird strings, it will crash or worse, it's going to append `.js` at the end.
 
 ## Step 2
+
 Time to configure your server.
 
  1. PORT: the local port where the server will listen.
@@ -33,14 +47,17 @@ Time to configure your server.
     ![Access point prompt](./readmeFiles/access.PNG)
 
 # The End
+
 That's all.
 
 ![GoodBye](./readmeFiles/GoodBye.PNG)
 
 ### Comming soon
+
 The next steps, is test. Test it a lot.
 
 But then:
 
- - Package.json script modify to set the servers as main
+ - Package.json script to set the servers as main
+ - Optimiced servers for each framework
  - ...
