@@ -48,7 +48,7 @@ Time to configure your server.
 
 # The End
 
-That's all.
+That's all. Now you can run `npm run nsspa-deploy`.
 
 ![GoodBye](./readmeFiles/GoodBye.PNG)
 

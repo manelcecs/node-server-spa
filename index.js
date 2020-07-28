@@ -88,25 +88,26 @@ function basicInfo() {
 }
 
 //Request Data
-function requestData(){
-    getServerName().then( (serverName) => {
+function requestData() {
+    getServerName().then((serverName) => {
         //We have the server file
         serverFileName = serverName;
         //Lets get the config data
-        getServerConfigData().then((data)=>{
-            writeServerFile(serverFileName, data);
+        getServerConfigData().then((data) => {
+            files.writeServerFile(serverFileName, data);
         }).finally(() => {
-                goodBye();
+            files.editPackage();
+            goodBye();
         });
 
     });
 }
 
 async function getServerName() {
-    
+
     let name = await inquirer.askServerFilename();
 
-    if(name) {
+    if (name) {
         name = inquirer.validateExtension(name.name, 'js', 'server.js');
     }
     return name;
@@ -117,10 +118,10 @@ async function getServerConfigData() {
 
     var data = await inquirer.askServerConfigData();
 
-    if(data){
+    if (data) {
         data.access = inquirer.validateExtension(data.access, 'html', 'index.js');
-        data.localPort = (data.localPort == '')? '3030' : data.localPort;
-        data.distDir = (data.distDir == '')? '<rootFolder>/dist/<appName>' : data.distDir;
+        data.localPort = (data.localPort == '') ? '3030' : data.localPort;
+        data.distDir = (data.distDir == '') ? '<rootFolder>/dist/<appName>' : data.distDir;
     }
 
 
@@ -133,13 +134,13 @@ function writeServerFile(serverFileName, data) {
 }
 
 //GoodBye
-function goodBye(){
+function goodBye() {
     console.log(
         chalk.yellow(
-            "\nThanks for using NSSPA-CLi"+
-            "\nDo no forget to run: npm install express."+
-            "\nCheck if the server file was correclty creadted."+
-            "\nIf not, don't hesitate to contact me to solve the error."+
+            "\nThanks for using NSSPA-CLi" +
+            "\nDo no forget to run: npm install express." +
+            "\nCheck if the server file was correclty creadted." +
+            "\nIf not, don't hesitate to contact me to solve the error." +
             "\nSincerely, @manelececs"
         )
     );

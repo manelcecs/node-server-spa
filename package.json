@@ -1,57 +1,61 @@
 {
-  "name": "@manelcecs/node-server-spa",
-  "version": "0.3.0",
-  "description": "NPM node based package to provide a fast, complete and reliable way to publish, deploy or test SPA (such as Angular, React..) via Node + Express server.",
-  "main": "index.js",
-  "engines": {
-    "node": "^12.13.0"
-  },
-  "scripts": {
-    "create-server-file": "node index.js",
-    "test": "mocha",
-    "coverage": "nyc --cache false npm run test"
-  },
-  "bin": {
-    "nsspa": "./index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/manelcecs/node-server-spa.git"
-  },
-  "directories": {
-    "lib": "./lib",
-    "assets": "./assets",
-    "readmeFiles": "./readmeFiles"
-  },
-  "keywords": [
-    "node",
-    "express",
-    "spa",
-    "cli",
-    "angular",
-    "react",
-    "vue",
-    "javascript"
-  ],
-  "author": "manelcecs",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/manelcecs/node-server-spa/issues"
-  },
-  "homepage": "https://github.com/manelcecs/node-server-spa#readme",
-  "dependencies": {
-    "buffer-replace": "^1.0.0",
-    "chai": "^4.2.0",
-    "chalk": "^4.1.0",
-    "clear": "^0.1.0",
-    "configstore": "^5.0.1",
-    "crypto-js": "^4.0.0",
-    "figlet": "^1.5.0",
-    "inquirer": "^7.3.2",
-    "minimist": "^1.2.5",
-    "mocha": "^8.0.1",
-    "nyc": "^15.1.0",
-    "sinon": "^9.0.2"
-  },
-  "devDependencies": {}
+    "name": "@manelcecs/node-server-spa",
+    "version": "0.4.0",
+    "description": "NPM node based package to provide a fast, complete and reliable way to publish, deploy or test SPA (such as Angular, React..) via Node + Express server.",
+    "main": "index.js",
+    "engines": {
+        "node": "^12.13.0"
+    },
+    "scripts": {
+        "create-server-file": "node index.js",
+        "test": "mocha",
+        "coverage": "nyc --cache false npm run test",
+        "pre-deploy": "npm install && npm link",
+        "post-deploy": "npm unlink"
+    },
+    "bin": {
+        "nsspa": "./index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/manelcecs/node-server-spa.git"
+    },
+    "directories": {
+        "lib": "./lib",
+        "assets": "./assets",
+        "readmeFiles": "./readmeFiles"
+    },
+    "keywords": [
+        "node",
+        "express",
+        "spa",
+        "cli",
+        "angular",
+        "react",
+        "vue",
+        "javascript"
+    ],
+    "author": "manelcecs",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/manelcecs/node-server-spa/issues"
+    },
+    "homepage": "https://github.com/manelcecs/node-server-spa#readme",
+    "dependencies": {
+        "buffer-replace": "^1.0.0",
+        "chai": "^4.2.0",
+        "chalk": "^4.1.0",
+        "clear": "^0.1.0",
+        "configstore": "^5.0.1",
+        "crypto-js": "^4.0.0",
+        "express": "^4.17.1",
+        "figlet": "^1.5.0",
+        "inquirer": "^7.3.2",
+        "minimist": "^1.2.5",
+        "mocha": "^8.0.1",
+        "npm-package-bin": "0.0.6",
+        "nyc": "^15.1.0",
+        "sinon": "^9.0.2"
+    },
+    "devDependencies": {}
 }
