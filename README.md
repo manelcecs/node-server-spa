@@ -1,6 +1,6 @@
 # node-server-spa
 
-NPM node based CLI package to provide a fast, complete and reliable way to publish, deploy or test SPA (such as Angular, React..) via Node + Express server.
+NPM node based CLI package to provide a fast, complete and reliable way to publish, deploy or test SPA (Angular projects) via Node + Express server.
 
 ## What NSSPA do?
 
